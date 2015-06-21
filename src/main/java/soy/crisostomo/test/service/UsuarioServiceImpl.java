@@ -11,7 +11,7 @@ import soy.crisostomo.test.repository.UsuarioRepository;
 public class UsuarioServiceImpl implements UsuarioService {
 	
 	@Autowired
-	private UsuarioRepository ur = null;
+	private UsuarioRepository ur;
 	
 	@Override
 	public List<Usuario> obtenerTodos(){

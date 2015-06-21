@@ -25,12 +25,11 @@
 		<property name="driverClass" value="org.postgresql.Driver" />
 		
 		
-		<property name="jdbcUrl" value="jdb:postgresql://${OPENSHIFT_POSTGRESQL_DB_HOST}:${OPENSHIFT_POSTGRESQL_DB_PORT}/tt"/>
+		<property name="jdbcUrl" value="jdbc:postgresql://${OPENSHIFT_POSTGRESQL_DB_HOST}:${OPENSHIFT_POSTGRESQL_DB_PORT}//tt"/>
 		<property name="user" value="${OPENSHIFT_POSTGRESQL_DB_USERNAME}" />
 		<property name="password" value="${OPENSHIFT_POSTGRESQL_DB_PASSWORD}" />
 		
-
-<!-- 		<property name="jdbcUrl" value="jdbc:mysql://127.0.0.1:5432/tt" /> -->
+<!-- 		<property name="jdbcUrl" value="jdbc:postgresql://127.0.0.1:5432/tt" /> -->
 <!-- 		<property name="user" value="admindfggrtk" /> -->
 <!-- 		<property name="password" value="9VZDas9sMn8a" /> -->
 
