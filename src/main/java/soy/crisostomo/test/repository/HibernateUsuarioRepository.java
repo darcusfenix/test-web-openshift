@@ -20,8 +20,10 @@ public class HibernateUsuarioRepository implements UsuarioRepository {
 	@Override
 	public List<Usuario> obtenerTodos(){
 		List<Usuario> usuarios = null;
+		/*
 		Criteria criteria = sf.getCurrentSession().createCriteria(Usuario.class);
 		usuarios = criteria.list();
+		*/
 		return usuarios;
 	}
 }
