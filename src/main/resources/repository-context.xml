@@ -24,9 +24,11 @@
 		destroy-method="close" >
 		<property name="driverClass" value="org.postgresql.Driver" />
 		
-		<PROPERTY NAME="JDBCURL" VALUE="JDBC:POSTGRESQL://${OPENSHIFT_POSTGRESQL_DB_HOST}:${OPENSHIFT_POSTGRESQL_DB_PORT}/TT" />
-		<PROPERTY NAME="USER" VALUE="${OPENSHIFT_POSTGRESQL_DB_USERNAME}" />
-		<PROPERTY NAME="PASSWORD" VALUE="${OPENSHIFT_POSTGRESQL_DB_PASSWORD}" />
+		
+		<property name="jdbcUrl" value="jdb:postgresql://${OPENSHIFT_POSTGRESQL_DB_HOST}:${OPENSHIFT_POSTGRESQL_DB_PORT}/tt"/>
+		<property name="user" value="${OPENSHIFT_POSTGRESQL_DB_USERNAME}" />
+		<property name="password" value="${OPENSHIFT_POSTGRESQL_DB_PASSWORD}" />
+		
 
 <!-- 		<property name="jdbcUrl" value="jdbc:mysql://127.0.0.1:5432/tt" /> -->
 <!-- 		<property name="user" value="admindfggrtk" /> -->
