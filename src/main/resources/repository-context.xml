@@ -30,8 +30,8 @@
 		<property name="password" value="${OPENSHIFT_POSTGRESQL_DB_PASSWORD}" />
 		
 <!-- 		<property name="jdbcUrl" value="jdbc:postgresql://127.0.0.1:5432/test" /> -->
-<!-- 		<property name="user" value="adminhi97uxw" /> -->
-<!-- 		<property name="password" value="dSc-sjQVwi-q" /> -->
+<!-- 		<property name="user" value="admindhx8djr" /> -->
+<!-- 		<property name="password" value="tNMpwJfV4JYM" /> -->
 
 		<property name="acquireIncrement" value="3" />
 		<property name="minPoolSize" value="3" />
