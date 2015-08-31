@@ -25,13 +25,13 @@
 		<property name="driverClass" value="org.postgresql.Driver" />
 		
 		
-		<property name="jdbcUrl" value="jdbc:postgresql://${OPENSHIFT_POSTGRESQL_DB_HOST}:${OPENSHIFT_POSTGRESQL_DB_PORT}//tt"/>
+		<property name="jdbcUrl" value="jdbc:postgresql://${OPENSHIFT_POSTGRESQL_DB_HOST}:${OPENSHIFT_POSTGRESQL_DB_PORT}/test"/>
 		<property name="user" value="${OPENSHIFT_POSTGRESQL_DB_USERNAME}" />
 		<property name="password" value="${OPENSHIFT_POSTGRESQL_DB_PASSWORD}" />
 		
-<!-- 		<property name="jdbcUrl" value="jdbc:postgresql://127.0.0.1:5432/tt" /> -->
-<!-- 		<property name="user" value="admindfggrtk" /> -->
-<!-- 		<property name="password" value="9VZDas9sMn8a" /> -->
+<!-- 		<property name="jdbcUrl" value="jdbc:postgresql://127.0.0.1:5432/test" /> -->
+<!-- 		<property name="user" value="adminhi97uxw" /> -->
+<!-- 		<property name="password" value="dSc-sjQVwi-q" /> -->
 
 		<property name="acquireIncrement" value="3" />
 		<property name="minPoolSize" value="3" />
