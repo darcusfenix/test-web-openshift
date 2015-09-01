@@ -32,4 +32,10 @@ public class UsuarioRestController {
 		}
 		return usr;
 	}
+	/*
+	 	{
+    		"nombre": "test post",
+    		"apellido": "test post 2"
+		}
+	*/
 }
