@@ -12,14 +12,22 @@ import soy.crisostomo.test.model.Usuario;
 @Repository
 @Transactional
 public class HibernateUsuarioRepository implements UsuarioRepository {
-	
-	@Autowired
-	private SessionFactory sf;
-	
-	@Override
-	public List<Usuario> obtenerTodos(){
-		List<Usuario> usuarios = null;
-		usuarios = sf.getCurrentSession().createCriteria(Usuario.class).list();
-		return usuarios;
-	}
+
+    @Autowired
+    private SessionFactory sf;
+
+    @Override
+    public List<Usuario> obtenerTodos() {
+        List<Usuario> usuarios = null;
+        usuarios = sf.getCurrentSession().createCriteria(Usuario.class).list();
+        return usuarios;
+    }
+
+    @Override
+    public Integer save(Usuario usuario) {
+
+        sf.getCurrentSession().save(usuario);
+
+        return usuario.getId();
+    }
 }

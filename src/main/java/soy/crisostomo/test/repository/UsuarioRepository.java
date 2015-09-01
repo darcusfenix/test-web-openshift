@@ -7,5 +7,5 @@ import soy.crisostomo.test.model.Usuario;
 public interface UsuarioRepository {
 
 	List<Usuario> obtenerTodos();
-
+	Integer save(Usuario usuario);
 }

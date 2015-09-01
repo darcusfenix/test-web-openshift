@@ -1,14 +1,16 @@
 package soy.crisostomo.test.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import org.hibernate.annotations.GenerationTime;
+
+import javax.annotation.Generated;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "usuario")
 public class Usuario {
 	@Id
+	@Column(columnDefinition = "serial")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	@Column(name = "nombre")
 	private String nombre;
