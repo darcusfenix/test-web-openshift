@@ -10,14 +10,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import soy.crisostomo.test.model.Usuario;
-import soy.crisostomo.test.service.UsuarioService;
+import soy.crisostomo.test.repository.UsuarioRepository;
 
 @Controller
 @RestController("api/rest/usuarios")
 public class UsuarioRestController {
 	
 	@Autowired
-	private  UsuarioService us;
+	private UsuarioRepository us;
 
 	@RequestMapping(method = RequestMethod.GET, produces = "application/json")
 	public @ResponseBody List<Usuario> verUsuarios() {
